@@ -50,7 +50,8 @@
 
     <!-- Dependencies -->
     <android.version>4.1.1.4</android.version>
-    <okhttp.version>3.11.0</okhttp.version>
+    <okhttp.version>3.12.0-SNAPSHOT</okhttp.version>
+    <okio.version>1.15.0</okio.version>
     <animal.sniffer.version>1.14</animal.sniffer.version>
 
     <!-- Adapter Dependencies -->
@@ -105,6 +106,11 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <groupId>com.squareup.okio</groupId>
+        <artifactId>okio</artifactId>
+        <version>${okio.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.google.android</groupId>
         <artifactId>android</artifactId>
         <version>${android.version}</version>
@@ -120,7 +126,7 @@
         <version>${animal.sniffer.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.squareup.okhttp3</groupId>
+        <groupId>com.btit.okhttp3</groupId>
         <artifactId>okhttp</artifactId>
         <version>${okhttp.version}</version>
       </dependency>
